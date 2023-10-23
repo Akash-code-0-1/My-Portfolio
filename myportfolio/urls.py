@@ -16,7 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from portfolio.views import*
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    
+    #portfolio site path
+    path('portFrontpage/',port_front_page,name="port_front_page"),
 ]
